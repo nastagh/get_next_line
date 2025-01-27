@@ -7,12 +7,9 @@ int	main(void)
 {
 	char *file_name = "file.txt";
 	int fd = open(file_name, O_RDONLY);
-	if(fd == -1){
-        printf("\nError Opening File!!\n");
-		return (1);
-    }
 	char *line;
 	line = get_next_line(fd);
+	
 	printf("%s", line);
 
 	free(line);

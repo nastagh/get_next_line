@@ -11,5 +11,6 @@
 char	*get_next_line(int fd);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_strchr(const char *s, int c);
 
 #endif

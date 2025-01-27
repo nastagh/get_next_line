@@ -21,3 +21,19 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(tmp, nmemb * size);
 	return (tmp);
 }
+
+char	*ft_strchr(const char *s, int c)
+{
+	char	*tmp;
+
+	tmp = (char *)s;
+	while (*tmp)
+	{
+		if (*tmp == (char)c)
+			return (tmp);
+		tmp++;
+	}
+	if (*tmp == (char)c)
+		return (tmp);
+	return (NULL);
+}
