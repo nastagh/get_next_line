@@ -18,3 +18,6 @@ int	main(void)
 	close(fd);
 	return (0);
 }
+
+
+// gcc -Wall -Wextra -Werror test.c && ./a.out
