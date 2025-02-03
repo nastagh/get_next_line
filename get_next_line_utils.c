@@ -6,8 +6,8 @@ void	ft_bzero(void *s, size_t n)
 		return ;
 	while (n)
 	{
-		((char *)s)[n] = 0;
 		n--;
+		((char *)s)[n] = 0;
 	}
 }
 
@@ -25,7 +25,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*tmp;
 
-	tmp = (void *) malloc(nmemb * size);
+	tmp = (void *)malloc(nmemb * size);
 	if (!tmp)
 		return (NULL);
 	ft_bzero(tmp, nmemb * size);
