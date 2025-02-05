@@ -1,4 +1,4 @@
-The first string1
+The first string
 The second string
 The third string
 The forth string
@@ -6,6 +6,5 @@ The fifth string
 The sixth string
 The seventh string
 The eighth string
-The ninth string1
-The tenth string2
-f
+The ninth string
+The tenth string

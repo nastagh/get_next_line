@@ -6,18 +6,18 @@
 
 int	main(void)
 {
-	char *file_name = "read_error.txt";
+	char *file_name = "file.txt";
 	int fd = open(file_name, O_RDONLY);
 	char *line;
 	line = get_next_line(fd);
 	printf("%s", line);
 	free(line);
-	// while (line)
-	// {
-	// 	line = get_next_line(fd);
-	// 	printf("%s", line);
-	// 	free(line);
-	// }
+	while (line)
+	{
+		line = get_next_line(fd);
+		printf("%s", line);
+		free(line);
+	}
 	// printf("%s", line);
 	// line = get_next_line(fd);
 	// printf("%s", line);
