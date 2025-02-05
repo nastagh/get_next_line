@@ -18,32 +18,6 @@ int	main(void)
 		printf("%s", line);
 		free(line);
 	}
-	// printf("%s", line);
-	// line = get_next_line(fd);
-	// printf("%s", line);
-	// line = get_next_line(fd);
-	// printf("%s", line);
-	// line = get_next_line(fd);
-	// printf("%s", line);
-	// line = get_next_line(fd);
-	// printf("%s", line);
-	// line = get_next_line(fd);
-	// printf("%s", line);
-	// line = get_next_line(fd);
-	// printf("%s", line);
-	// line = get_next_line(fd);
-	// printf("%s", line);
-	// line = get_next_line(fd);
-	// printf("%s", line);
-	// line = get_next_line(fd);
-	// printf("%s", line);
-	// 	line = get_next_line(fd);
-	// printf("%s", line);
-	// 	line = get_next_line(fd);
-	// printf("%s", line);
-
-	// free(line);
-	// line = NULL;
 
 	close(fd);
 	return (0);
@@ -51,3 +25,4 @@ int	main(void)
 
 // gcc -Wall -Wextra -Werror test.c && ./a.out
 // valgrind --leak-check=full ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 test.c && ./a.out
